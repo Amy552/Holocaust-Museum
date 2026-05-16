@@ -50,8 +50,8 @@ export default function RemembrancePage() {
         <Container className="grid gap-12 md:grid-cols-2 md:items-start">
           <div className="order-2 md:order-1">
             <img
-              src="https://images.unsplash.com/photo-1604848698030-c434ba08ece1?auto=format&fit=crop&w=1200&q=70"
-              alt="A stone wall in muted afternoon light."
+              src="https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=1200&q=70"
+              alt="A single lit candle, its flame steady in soft darkness."
               className="aspect-[4/3] w-full object-cover"
             />
           </div>
