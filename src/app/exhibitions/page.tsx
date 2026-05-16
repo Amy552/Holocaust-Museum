@@ -15,7 +15,11 @@ type Exhibition = {
   coverImage?: string;
 };
 
-export const metadata = { title: "Exhibitions" };
+export const metadata = {
+  title: "Exhibitions",
+  description:
+    "Permanent and special exhibitions at the El Paso Holocaust Museum and Study Center, including bilingual interpretation throughout the galleries.",
+};
 export const revalidate = 60;
 
 export default async function ExhibitionsPage() {
@@ -38,27 +42,61 @@ export default async function ExhibitionsPage() {
       <PageHeader
         eyebrow="Exhibitions"
         title="Exhibitions"
-        lede="Permanent galleries, special exhibitions, and traveling shows that examine the history of the Holocaust through artifacts, testimony, and scholarship."
+        lede="Permanent galleries, special exhibitions, and traveling shows that examine the history of the Holocaust through artifacts, testimony, and scholarship. Interpretive text is offered throughout the museum in English and Spanish."
       />
-      <Container className="space-y-16 py-16">
-        {exhibitions.length === 0 ? (
-          <EmptyState />
-        ) : (
-          <>
-            {grouped.permanent.length > 0 && (
-              <Section title="Permanent" items={grouped.permanent} />
-            )}
-            {grouped.special.length > 0 && (
-              <Section title="Special" items={grouped.special} />
-            )}
-            {grouped.traveling.length > 0 && (
-              <Section title="Traveling" items={grouped.traveling} />
-            )}
-            {grouped.past.length > 0 && (
-              <Section title="Past" items={grouped.past} muted />
-            )}
-          </>
-        )}
+
+      <Container className="py-16">
+        <section className="mb-16 grid gap-12 md:grid-cols-[1.2fr_1fr] md:items-start">
+          <div>
+            <p className="eyebrow mb-3">Permanent gallery</p>
+            <h2 className="mb-4">From Vilna to El Paso, and beyond</h2>
+            <p className="prose-museum text-ink-soft">
+              The museum&rsquo;s permanent gallery traces the rise of
+              Nazism, the destruction of European Jewish life, the
+              experience of survival, the post-war resettlement of
+              displaced persons in the Americas &mdash; including those
+              who built lives here in El Paso and Ciudad Juárez &mdash;
+              and the work of memory in our own time. The path is
+              chronological and follows roughly sixty to ninety minutes of
+              unhurried visiting.
+            </p>
+            <p className="prose-museum text-ink-soft">
+              Artifacts on long-term display include items donated by
+              survivor families of the Borderland: identification papers,
+              photographs, letters, and a Torah scroll rescued from a
+              destroyed European community and given to B&rsquo;nai Zion
+              Congregation in El Paso.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1565060169187-5284a3b1aa44?auto=format&fit=crop&w=1200&q=70"
+              alt="A quiet museum gallery in soft, even light."
+              className="aspect-[4/3] w-full object-cover"
+            />
+          </div>
+        </section>
+
+        <div className="space-y-16">
+          {exhibitions.length === 0 ? (
+            <EmptyState />
+          ) : (
+            <>
+              {grouped.permanent.length > 0 && (
+                <Section title="Permanent" items={grouped.permanent} />
+              )}
+              {grouped.special.length > 0 && (
+                <Section title="Special" items={grouped.special} />
+              )}
+              {grouped.traveling.length > 0 && (
+                <Section title="Traveling" items={grouped.traveling} />
+              )}
+              {grouped.past.length > 0 && (
+                <Section title="Past" items={grouped.past} muted />
+              )}
+            </>
+          )}
+        </div>
       </Container>
     </>
   );
@@ -111,8 +149,10 @@ function EmptyState() {
   return (
     <div className="rounded-sm border border-dashed border-ink/20 p-10 text-center text-ink-muted">
       <p>
-        Exhibition content will appear here once published in the Sanity
-        Studio. Visit <code>/studio</code> to add your first exhibition.
+        Special and traveling exhibitions will appear here once published
+        in the Sanity Studio. Visit <code>/studio</code> to add your first
+        exhibition. The permanent gallery, described above, is always on
+        view at 715 N. Oregon Street.
       </p>
     </div>
   );

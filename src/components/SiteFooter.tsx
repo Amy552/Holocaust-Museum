@@ -47,16 +47,22 @@ export default function SiteFooter() {
       <Container>
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-1">
-            <p className="font-serif text-xl">Museum of Remembrance</p>
+            <p className="font-serif text-xl">
+              El Paso Holocaust Museum
+              <span className="block text-base text-ink-soft">
+                and Study Center
+              </span>
+            </p>
             <p className="mt-3 text-sm text-ink-muted">
-              A place of memory, witness, and education.
+              Memoria, testimonio, educación. A place of memory, witness, and
+              education on the U.S.&ndash;Mexico border.
             </p>
             <address className="mt-4 not-italic text-sm text-ink-soft">
-              123 Memorial Way
+              715 N. Oregon Street
               <br />
-              City, State 00000
+              El Paso, Texas 79902
               <br />
-              <a href="tel:+10000000000">+1 (000) 000-0000</a>
+              <a href="tel:+19153510048">(915) 351-0048</a>
             </address>
           </div>
           {groups.map((group) => (
@@ -79,8 +85,8 @@ export default function SiteFooter() {
         </div>
         <div className="mt-12 flex flex-col gap-2 border-t border-ink/10 pt-6 text-xs text-ink-muted md:flex-row md:items-center md:justify-between">
           <p>
-            &copy; {new Date().getFullYear()} Museum of Remembrance. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} El Paso Holocaust Museum and
+            Study Center. All rights reserved.
           </p>
           <ul className="flex flex-wrap gap-4">
             <li>

@@ -5,11 +5,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Museum of Remembrance",
-    template: "%s | Museum of Remembrance",
+    default: "El Paso Holocaust Museum and Study Center",
+    template: "%s | El Paso Holocaust Museum and Study Center",
   },
   description:
-    "A museum dedicated to the history of the Holocaust, the testimony of survivors, and the education of future generations.",
+    "Texas's only Holocaust museum. Bilingual exhibitions, education, archives, and remembrance programs in downtown El Paso, serving the Paso del Norte region.",
 };
 
 export default function RootLayout({
