@@ -55,6 +55,14 @@ export default async function CollectionsPage() {
         lede="Photographs, documents, personal belongings, and works of art that record the lives of those who suffered, resisted, and survived. Items are presented in English and Spanish with the care and context their stories deserve."
       />
 
+      <section className="border-b border-ink/10">
+        <img
+          src="https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=2400&q=70"
+          alt="Aged paper documents and letters laid out for study."
+          className="h-[35vh] w-full object-cover md:h-[45vh]"
+        />
+      </section>
+
       <Container className="py-16">
         <section className="mb-16 grid gap-12 md:grid-cols-2 md:items-start">
           <div>

@@ -115,8 +115,22 @@ export default async function EventsPage() {
         </section>
 
         <section className="rounded-sm bg-paper-warm p-10">
-          <p className="eyebrow mb-3">Throughout the year</p>
-          <h2 className="mb-6">Annual programs</h2>
+          <div className="mb-8 grid gap-8 md:grid-cols-[1fr_1fr] md:items-center">
+            <div>
+              <p className="eyebrow mb-3">Throughout the year</p>
+              <h2 className="mb-2">Annual programs</h2>
+              <p className="text-ink-soft">
+                The rhythm of our year is shaped by the dates the world has
+                given us to remember &mdash; and by the dates our own city
+                has.
+              </p>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=1200&q=70"
+              alt="A single lit candle in a darkened room."
+              className="aspect-[4/3] w-full object-cover"
+            />
+          </div>
           <ul className="grid gap-8 md:grid-cols-2">
             {annualPrograms.map((p) => (
               <li key={p.title} className="border-t border-ink/10 pt-4">

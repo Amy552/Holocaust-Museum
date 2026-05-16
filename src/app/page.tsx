@@ -4,8 +4,15 @@ import Container from "@/components/Container";
 export default function HomePage() {
   return (
     <>
-      <section className="border-b border-ink/10 bg-ink text-paper">
-        <Container className="py-24 md:py-32">
+      <section className="relative border-b border-ink/10 bg-ink text-paper">
+        <img
+          src="https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=2000&q=70"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover opacity-25"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/30" />
+        <Container className="relative py-24 md:py-32">
           <p className="eyebrow mb-6 text-paper/70">
             Downtown El Paso &middot; 715 N. Oregon Street
           </p>
@@ -34,6 +41,14 @@ export default function HomePage() {
             </Link>
           </div>
         </Container>
+      </section>
+
+      <section className="border-b border-ink/10">
+        <img
+          src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=2400&q=70"
+          alt="Desert mountains rising above the Chihuahuan Desert at dusk."
+          className="h-[40vh] w-full object-cover md:h-[55vh]"
+        />
       </section>
 
       <section className="border-b border-ink/10 bg-paper-warm py-16">

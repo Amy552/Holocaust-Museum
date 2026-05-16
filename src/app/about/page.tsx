@@ -16,6 +16,14 @@ export default function AboutPage() {
         lede="The El Paso Holocaust Museum and Study Center teaches the history of the Holocaust, honors the memory of its victims, and challenges visitors to confront hatred, prevent genocide, and promote human dignity &mdash; in English, in Spanish, and on the U.S.&ndash;Mexico border."
       />
 
+      <section className="border-b border-ink/10">
+        <img
+          src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=2400&q=70"
+          alt="Open books and bound volumes resting together, suggesting study and remembrance."
+          className="h-[40vh] w-full object-cover md:h-[50vh]"
+        />
+      </section>
+
       <Container className="py-16">
         <section id="mission" className="mb-16 max-w-prose">
           <h2 className="mb-4">What we do</h2>

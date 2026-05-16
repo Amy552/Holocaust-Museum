@@ -70,8 +70,8 @@ export default async function ExhibitionsPage() {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1565060169187-5284a3b1aa44?auto=format&fit=crop&w=1200&q=70"
-              alt="A quiet museum gallery in soft, even light."
+              src="https://images.unsplash.com/photo-1564399579883-451a5d44ec08?auto=format&fit=crop&w=1200&q=70"
+              alt="A quiet museum gallery interior with columns in soft, even light."
               className="aspect-[4/3] w-full object-cover"
             />
           </div>

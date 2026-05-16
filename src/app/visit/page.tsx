@@ -16,6 +16,14 @@ export default function VisitPage() {
         lede="The El Paso Holocaust Museum and Study Center is open Tuesday through Sunday in downtown El Paso. General admission is free. Visitantes en español son siempre bienvenidos."
       />
 
+      <section className="border-b border-ink/10">
+        <img
+          src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=2400&q=70"
+          alt="A historic stone façade on a quiet downtown street."
+          className="h-[40vh] w-full object-cover md:h-[50vh]"
+        />
+      </section>
+
       <Container className="grid gap-16 py-16 md:grid-cols-3">
         <section id="hours">
           <p className="eyebrow mb-3">Hours</p>

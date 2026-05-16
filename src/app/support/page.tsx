@@ -39,6 +39,14 @@ export default function SupportPage() {
         lede="The El Paso Holocaust Museum and Study Center is an independent, nonprofit institution. Every membership, gift, and volunteer hour makes our work in the Borderland possible."
       />
 
+      <section className="border-b border-ink/10">
+        <img
+          src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=2400&q=70"
+          alt="An open book resting in soft natural light."
+          className="h-[35vh] w-full object-cover md:h-[45vh]"
+        />
+      </section>
+
       <Container className="py-16">
         <ul className="grid gap-10 md:grid-cols-2">
           {ways.map((w) => (

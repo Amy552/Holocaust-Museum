@@ -60,8 +60,8 @@ export default function EducationPage() {
         <Container className="grid gap-12 md:grid-cols-2 md:items-start">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1497486751825-1233686f5d54?auto=format&fit=crop&w=1200&q=70"
-              alt="Students seated together in a classroom, listening attentively."
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=70"
+              alt="A small group of students working together at a table."
               className="aspect-[4/3] w-full object-cover"
             />
           </div>
