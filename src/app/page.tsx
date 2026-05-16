@@ -43,10 +43,10 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="border-b border-ink/10">
+      <section className="border-b border-ink/10 bg-ink">
         <img
-          src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=2400&q=70"
-          alt="Desert mountains rising above the Chihuahuan Desert at dusk."
+          src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=2400&q=70"
+          alt="Memorial candles lit together in a darkened room — a recurring image in Holocaust remembrance."
           className="h-[40vh] w-full object-cover md:h-[55vh]"
         />
       </section>

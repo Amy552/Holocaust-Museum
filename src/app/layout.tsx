@@ -4,7 +4,7 @@ import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
 
 const ogImage =
-  "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=1200&h=630&q=80";
+  "https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=1200&h=630&q=80";
 
 export const metadata: Metadata = {
   title: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Desert mountains rising above the Chihuahuan Desert near El Paso at dusk.",
+        alt: "Memorial candles lit in a darkened room.",
       },
     ],
   },
